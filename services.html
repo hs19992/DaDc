@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Dr Ali Dental Centre</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="logo.svg" alt="nds" width="50" height="50">
+                <h1>Dr Ali Dental Centre</h1>
+            </div>
+            <button class="menu-button" aria-label="Toggle menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="services-page">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="images/Scaling and Polising.svg" alt="Scaling and Polishing">
+                <h3>Scaling and Polishing</h3>
+                <p>Professional teeth cleaning for optimal oral hygiene</p>
+            </div>
+            <div class="service-card">
+                <img src="images/laser tooth filling.svg" alt="Laser Tooth Filling">
+                <h3>Composite Filling (Laser Filling)</h3>
+                <p>Advanced cavity treatment with precision</p>
+            </div>
+            <div class="service-card">
+                <img src="images/tooth extraction.svg" alt="Tooth Extractions">
+                <h3>Extractions (Simple, Surgical & Wisdom Tooth)</h3>
+                <p>Safe and comfortable tooth removal procedures</p>
+            </div>
+            <div class="service-card">
+                <img src="images/root canal.svg" alt="Root Canal Treatment">
+                <h3>Root Canal Treatment</h3>
+                <p>Expert endodontic care for damaged teeth</p>
+            </div>
+            <div class="service-card">
+                <img src="images/crown and bridges.svg" alt="Crowns and Bridges">
+                <h3>Crowns and Bridges</h3>
+                <p>Custom-made dental prosthetics</p>
+            </div>
+            <div class="service-card">
+                <img src="images/dentures.svg" alt="Denture">
+                <h3>Removable Dentures</h3>
+                <p>Comprehensive periodontal care</p>
+            </div>
+            <div class="service-card">
+                <img src="images/braces.svg" alt="Braces">
+                <h3>Braces and Alignment</h3>
+                <p>Orthodontic solutions for perfect smiles</p>
+            </div>
+            <div class="service-card">
+                <img src="images/dental implant.svg" alt="Implants">
+                <h3>Dental Implants</h3>
+                <p>Permanent tooth replacement solutions</p>
+            </div>
+            <div class="service-card">
+                <img src="images/laser whitening.svg" alt="Teeth Whitening">
+                <h3>Teeth Whitening/Bleaching</h3>
+                <p>Professional teeth whitening services</p>
+            </div>
+            <div class="service-card">
+                <img src="images/clear aligners.svg" alt="Clear Aligners">
+                <h3>Clear Aligners</h3>
+                <p>Invisible teeth straightening solution</p>
+            </div>
+            <div class="service-card">
+                <img src="images/veneers.svg" alt="Veneers">
+                <h3>Veneers</h3>
+                <p>Custom-made porcelain veneers</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Quick Contact</h3>
+                <p>📍 Shop# 2 Ground Floor Galaxy Mall, Airport Road (behind Dominos Khuda Buksh Colony KB Society) Lahore</p>
+                <p>📞 03282333999</p>
+            </div>
+            <div class="footer-hours">
+                <h3>Working Hours</h3>
+                <p>Monday - Saturday: 3:00 PM - 10:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://instagram.com/dr.alidentalcentre" target="_blank" rel="noopener noreferrer" class="social-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/dr.alidentalcentre" target="_blank" rel="noopener noreferrer" class="social-icon facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://wa.me/03282333999" target="_blank" rel="noopener noreferrer" class="social-icon whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dr Ali Dental Centre. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // Mobile menu toggle
+        const menuButton = document.querySelector('.menu-button');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

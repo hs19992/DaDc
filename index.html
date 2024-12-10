@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Ali Dental Centre</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="logo.svg" alt="nds" width="88" height="88">
+                <h1>DR Ali Dental Centre</h1>
+            </div>
+            <button class="menu-button" aria-label="Toggle menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to DADC</h2>
+                <p>Modern Dentistry with gentle care</p>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="cta-button">Book Appointment</a>
+                    <a href="services.html" class="secondary-button">Explore Services</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card" data-aos="fade-up">
+                <img src="images/Expert care.svg" alt="Expertise">
+                <h3>Expert Care</h3>
+                <p>Highly qualified dental professionals with years of experience in advanced procedures</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="images/modern tech.svg" alt="Technology">
+                <h3>Modern Technology</h3>
+                <p>State-of-the-art equipment and latest dental technologies for precise treatment</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/patient comfort.svg" alt="Comfort">
+                <h3>Patient Comfort</h3>
+                <p>Comfortable environment designed for a relaxing dental experience</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Quick Contact</h3>
+                <p>📍 Shop# 2 Ground Floor Galaxy Mall, Airport Road (behind Dominos Khuda Buksh Colony KB Society) Lahore</p>
+                <p>📞 03282333999</p>
+            </div>
+            <div class="footer-hours">
+                <h3>Working Hours</h3>
+                <p>Monday - Saturday: 3:00 PM - 10:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://instagram.com/dr.alidentalcentre" target="_blank" rel="noopener noreferrer" class="social-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/dr.alidentalcentre" target="_blank" rel="noopener noreferrer" class="social-icon facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://wa.me/03282333999" target="_blank" rel="noopener noreferrer" class="social-icon whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dr Ali Dental Centre. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const menuButton = document.querySelector('.menu-button');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

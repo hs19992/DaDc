@@ -1,0 +1,97 @@
+.reviews-page {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.reviews-slider {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    margin: 2rem 0;
+}
+
+.review-card {
+    position: absolute;
+    width: 100%;
+    max-width: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem;
+    background-color: var(--background-light);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    text-align: center;
+}
+
+.review-card.active {
+    opacity: 1;
+}
+
+
+
+.stars {
+    color: #ffd700;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.review-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.review-card p {
+    color: #666;
+    line-height: 1.6;
+    font-style: italic;
+}
+/* Footer Social Media Styles */
+.footer-social {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+.social-icon.instagram {
+    background: #E1306C;
+}
+
+.social-icon.facebook {
+    background: #1877F2;
+}
+
+.social-icon.whatsapp {
+    background: #25D366;
+}
+
+.social-icon.instagram:hover {
+    background: #c1295d;
+}
+
+.social-icon.facebook:hover {
+    background: #1664cf;
+}
